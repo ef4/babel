@@ -19,6 +19,7 @@ export type Plugin =
   | "flowComments"
   | "functionBind"
   | "functionSent"
+  | "glimmer"
   | "importMeta"
   | "jsx"
   | "logicalAssignment"

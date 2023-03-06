@@ -2845,6 +2845,23 @@ export function isJSXClosingFragment(
 
   return false;
 }
+export function isGlimmerTemplate(
+  node: object | null | undefined,
+  opts?: object | null,
+): node is t.GlimmerTemplate {
+  if (!node) return false;
+
+  const nodeType = (node as t.Node).type;
+  if (nodeType === "GlimmerTemplate") {
+    if (typeof opts === "undefined") {
+      return true;
+    } else {
+      return shallowEqual(node, opts);
+    }
+  }
+
+  return false;
+}
 export function isNoop(
   node: object | null | undefined,
   opts?: object | null,
@@ -5561,6 +5578,23 @@ export function isJSX(
     "JSXOpeningFragment" === nodeType ||
     "JSXClosingFragment" === nodeType
   ) {
+    if (typeof opts === "undefined") {
+      return true;
+    } else {
+      return shallowEqual(node, opts);
+    }
+  }
+
+  return false;
+}
+export function isGlimmer(
+  node: object | null | undefined,
+  opts?: object | null,
+): node is t.Glimmer {
+  if (!node) return false;
+
+  const nodeType = (node as t.Node).type;
+  if ("GlimmerTemplate" === nodeType) {
     if (typeof opts === "undefined") {
       return true;
     } else {

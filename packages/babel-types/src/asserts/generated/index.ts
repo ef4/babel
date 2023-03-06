@@ -1017,6 +1017,12 @@ export function assertJSXClosingFragment(
 ): asserts node is t.JSXClosingFragment {
   assert("JSXClosingFragment", node, opts);
 }
+export function assertGlimmerTemplate(
+  node: object | null | undefined,
+  opts?: object | null,
+): asserts node is t.GlimmerTemplate {
+  assert("GlimmerTemplate", node, opts);
+}
 export function assertNoop(
   node: object | null | undefined,
   opts?: object | null,
@@ -1772,6 +1778,12 @@ export function assertJSX(
   opts?: object | null,
 ): asserts node is t.JSX {
   assert("JSX", node, opts);
+}
+export function assertGlimmer(
+  node: object | null | undefined,
+  opts?: object | null,
+): asserts node is t.Glimmer {
+  assert("Glimmer", node, opts);
 }
 export function assertMiscellaneous(
   node: object | null | undefined,

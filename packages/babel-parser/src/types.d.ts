@@ -1010,6 +1010,9 @@ export type JSXOpeningFragment = Node;
 export type JSXClosingFragment = Node;
 export type JSXFragment = Node;
 
+// Glimmer
+export type GlimmerTemplate = Node;
+
 // Flow/TypeScript common (TODO: Not in spec)
 
 export interface TypeAnnotationBase extends NodeBase {

@@ -9,3 +9,4 @@ export * from "./flow";
 export * from "./base";
 export * from "./jsx";
 export * from "./typescript";
+export * from "./glimmer";

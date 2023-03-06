@@ -124,6 +124,7 @@ export type Node =
   | FunctionTypeAnnotation
   | FunctionTypeParam
   | GenericTypeAnnotation
+  | GlimmerTemplate
   | Identifier
   | IfStatement
   | Import
@@ -1577,6 +1578,11 @@ export interface JSXClosingFragment extends BaseNode {
   type: "JSXClosingFragment";
 }
 
+export interface GlimmerTemplate extends BaseNode {
+  type: "GlimmerTemplate";
+  content: string;
+}
+
 export interface Noop extends BaseNode {
   type: "Noop";
 }
@@ -2619,6 +2625,7 @@ export type JSX =
   | JSXFragment
   | JSXOpeningFragment
   | JSXClosingFragment;
+export type Glimmer = GlimmerTemplate;
 export type Miscellaneous = Noop | Placeholder | V8IntrinsicIdentifier;
 export type TypeScript =
   | TSParameterProperty
@@ -2795,6 +2802,7 @@ export interface Aliases {
   EnumBody: EnumBody;
   EnumMember: EnumMember;
   JSX: JSX;
+  Glimmer: Glimmer;
   Miscellaneous: Miscellaneous;
   TypeScript: TypeScript;
   TSTypeElement: TSTypeElement;

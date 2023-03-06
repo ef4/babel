@@ -176,6 +176,7 @@ export {
   jsxFragment as JSXFragment,
   jsxOpeningFragment as JSXOpeningFragment,
   jsxClosingFragment as JSXClosingFragment,
+  glimmerTemplate as GlimmerTemplate,
   noop as Noop,
   placeholder as Placeholder,
   v8IntrinsicIdentifier as V8IntrinsicIdentifier,

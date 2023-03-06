@@ -1726,6 +1726,12 @@ export function jsxClosingFragment(): t.JSXClosingFragment {
   };
 }
 export { jsxClosingFragment as jSXClosingFragment };
+export function glimmerTemplate(content: string): t.GlimmerTemplate {
+  return validateNode<t.GlimmerTemplate>({
+    type: "GlimmerTemplate",
+    content,
+  });
+}
 export function noop(): t.Noop {
   return {
     type: "Noop",

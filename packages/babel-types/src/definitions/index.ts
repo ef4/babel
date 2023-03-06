@@ -2,6 +2,7 @@ import toFastProperties from "to-fast-properties";
 import "./core";
 import "./flow";
 import "./jsx";
+import "./glimmer";
 import "./misc";
 import "./experimental";
 import "./typescript";

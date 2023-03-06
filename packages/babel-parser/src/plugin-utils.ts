@@ -228,6 +228,7 @@ export function validatePlugins(plugins: PluginList) {
 import estree from "./plugins/estree";
 import flow from "./plugins/flow";
 import jsx from "./plugins/jsx";
+import glimmer from "./plugins/glimmer";
 import typescript from "./plugins/typescript";
 import placeholders from "./plugins/placeholders";
 import v8intrinsic from "./plugins/v8intrinsic";
@@ -236,6 +237,7 @@ import v8intrinsic from "./plugins/v8intrinsic";
 export const mixinPlugins = {
   estree,
   jsx,
+  glimmer,
   flow,
   typescript,
   v8intrinsic,

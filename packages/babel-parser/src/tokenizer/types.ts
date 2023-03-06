@@ -343,6 +343,11 @@ export const tt = {
   jsxTagStart: createToken("jsxTagStart", { startsExpr: true }),
   jsxTagEnd: createToken("jsxTagEnd"),
 
+  // glimmer plugin
+  glimmerTemplateStart: createToken("glimmerTemplateStart"),
+  glimmerTemplateContent: createToken("glimmerTemplateContent"),
+  glimmerTemplateEnd: createToken("glimmerTemplateEnd"),
+
   // placeholder plugin
   placeholder: createToken("%%", { startsExpr: true }),
 } as const;
