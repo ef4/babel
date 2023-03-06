@@ -5587,23 +5587,6 @@ export function isJSX(
 
   return false;
 }
-export function isGlimmer(
-  node: object | null | undefined,
-  opts?: object | null,
-): node is t.Glimmer {
-  if (!node) return false;
-
-  const nodeType = (node as t.Node).type;
-  if ("GlimmerTemplate" === nodeType) {
-    if (typeof opts === "undefined") {
-      return true;
-    } else {
-      return shallowEqual(node, opts);
-    }
-  }
-
-  return false;
-}
 export function isMiscellaneous(
   node: object | null | undefined,
   opts?: object | null,

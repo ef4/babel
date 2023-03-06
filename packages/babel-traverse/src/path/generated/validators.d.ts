@@ -399,10 +399,6 @@ interface BaseNodePathValidators {
     this: NodePath<T>,
     opts?: object,
   ): this is NodePath<T & t.GenericTypeAnnotation>;
-  isGlimmer<T extends t.Node>(
-    this: NodePath<T>,
-    opts?: object,
-  ): this is NodePath<T & t.Glimmer>;
   isGlimmerTemplate<T extends t.Node>(
     this: NodePath<T>,
     opts?: object,

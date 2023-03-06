@@ -51,7 +51,6 @@ export const FLOWPREDICATE_TYPES = FLIPPED_ALIAS_KEYS["FlowPredicate"];
 export const ENUMBODY_TYPES = FLIPPED_ALIAS_KEYS["EnumBody"];
 export const ENUMMEMBER_TYPES = FLIPPED_ALIAS_KEYS["EnumMember"];
 export const JSX_TYPES = FLIPPED_ALIAS_KEYS["JSX"];
-export const GLIMMER_TYPES = FLIPPED_ALIAS_KEYS["Glimmer"];
 export const MISCELLANEOUS_TYPES = FLIPPED_ALIAS_KEYS["Miscellaneous"];
 export const TYPESCRIPT_TYPES = FLIPPED_ALIAS_KEYS["TypeScript"];
 export const TSTYPEELEMENT_TYPES = FLIPPED_ALIAS_KEYS["TSTypeElement"];

@@ -242,7 +242,6 @@ export interface NodePathAssertions {
   assertGenericTypeAnnotation(
     opts?: object,
   ): asserts this is NodePath<t.GenericTypeAnnotation>;
-  assertGlimmer(opts?: object): asserts this is NodePath<t.Glimmer>;
   assertGlimmerTemplate(
     opts?: object,
   ): asserts this is NodePath<t.GlimmerTemplate>;

@@ -1779,12 +1779,6 @@ export function assertJSX(
 ): asserts node is t.JSX {
   assert("JSX", node, opts);
 }
-export function assertGlimmer(
-  node: object | null | undefined,
-  opts?: object | null,
-): asserts node is t.Glimmer {
-  assert("Glimmer", node, opts);
-}
 export function assertMiscellaneous(
   node: object | null | undefined,
   opts?: object | null,

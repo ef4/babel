@@ -1,6 +1,6 @@
 import { defineAliasedType, assertValueType } from "./utils";
 
-const defineType = defineAliasedType("Glimmer");
+const defineType = defineAliasedType();
 
 defineType("GlimmerTemplate", {
   builder: ["content"],
